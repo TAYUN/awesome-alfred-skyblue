@@ -1,4 +1,4 @@
-<div style="text-align: center">
+<div align="center">
   <img alt="远方os(Alfred-Skyblue)" src="/src/logo/logo.jpeg" width="300" height="300" style="border-radius: 30% 5%"/>
   <h1>远方os(Alfred-Skyblue) 代码集</h1>
 </div>
