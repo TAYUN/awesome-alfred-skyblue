@@ -3,11 +3,7 @@
   <h1>远方os(Alfred-Skyblue) 代码集</h1>
 </div>
 
-收集和整理 [远方os(Alfred-Skyblue)](https://github.com/Alfred-Skyblue) 的优秀代码片段、项目和技术分享。
-
-## 📖 关于这个收集
-
-这个项目专门收集 [远方os(Alfred-Skyblue)](https://github.com/Alfred-Skyblue) 在各个平台分享的代码片段、开源项目和技术实现。[远方os(Alfred-Skyblue)](https://github.com/Alfred-Skyblue) 是一位在 vue、vueuse 官方团队成员。
+专门收集 [远方os(Alfred-Skyblue)](https://github.com/Alfred-Skyblue) 在各个平台分享的代码片段，并且是一位 vue、vueuse 官方团队成员。
 
 ## 📋 收集来源
 
