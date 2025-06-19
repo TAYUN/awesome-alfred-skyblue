@@ -1,0 +1,29 @@
+{
+    "name": "awesome-alfred-skyblue",
+    "type": "module",
+    "version": "0.0.0",
+    "description": "code collection of 远方os(Alfred-Skyblue)",
+    "license": "MIT",
+    "homepage": "https://github.com/lonewolfyx/awesome-alfred-skyblue",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:lonewolfyx/awesome-alfred-skyblue.git"
+    },
+    "bugs": {
+        "url": "https://github.com/lonewolfyx/awesome-alfred-skyblue/issues"
+    },
+    "scripts": {
+        "docs:dev": "vitepress dev",
+        "docs:build": "vitepress build",
+        "docs:preview": "vitepress preview",
+        "lint": "eslint",
+        "lint:fix": "eslint --fix"
+    },
+    "dependencies": {
+        "vitepress": "^1.6.3"
+    },
+    "devDependencies": {
+        "@antfu/eslint-config": "^4.15.0",
+        "eslint": "^9.29.0"
+    }
+}
