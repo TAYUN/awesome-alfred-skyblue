@@ -6,7 +6,7 @@ hero:
   name: "远方os"
   text: "Code Collection"
   image:
-    src: /logo/logo.jpeg
+    src: /logo.jpeg
     alt: 远方os Code Collection
   actions:
     - theme: brand
