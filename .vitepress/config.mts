@@ -26,7 +26,7 @@ export default defineConfig({
     lastUpdated: true,
     srcDir: path.resolve(__dirname, '../src'),
     rewrites: {
-        '/src/content/(.*)': '(.*)',
+        'content/(.*)': '(.*)',
     },
     vite: {
         server: {
