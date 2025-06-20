@@ -11,6 +11,7 @@ export default defineConfig({
             {
                 items: [
                     { text: 'vue 组件内的模板复用', link: '/use-template-reuse' },
+                    { text: 'vue 组件的二次封装 - 终极版', link: '/component-encapsulation-ultimate' },
                 ],
             },
         ],
