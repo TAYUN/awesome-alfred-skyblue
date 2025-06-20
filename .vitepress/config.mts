@@ -21,6 +21,7 @@ export default defineConfig({
         editLink: {
             pattern: 'https://github.com/lonewolfyx/awesome-alfred-skyblue/edit/master/src/:path',
         },
+        aside: false,
         outline: false,
     },
     lastUpdated: true,
