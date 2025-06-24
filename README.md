@@ -1,13 +1,9 @@
-<img alt="远方os(Alfred-Skyblue)" src="/src/public/logo.jpeg" width="150" height="150" borderRadius="50% 10%" />
-
-<div align="right">
-
-
-
-# 远方os(Alfred-Skyblue) 代码集
-### 专门收集 [远方os(Alfred-Skyblue)](https://github.com/Alfred-Skyblue) 在各个平台分享的代码片段，并且是一位 vue、vueuse 官方团队成员。
+<div align="center">
+  <img alt="远方os(Alfred-Skyblue)" src="/src/public/logo.jpeg" width="150" height="150" borderRadius="50% 10%" />
+  <h1>远方os(Alfred-Skyblue) 代码集</h1>
 </div>
 
+专门收集 [远方os(Alfred-Skyblue)](https://github.com/Alfred-Skyblue) 在各个平台分享的代码片段，并且是一位 vue、vueuse 官方团队成员。
 
 ## 📋 收集来源
 
