@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 开始学习 ->
-      link: /vue-global-status
+      link: /video/vue-global-status
     - theme: alt
       text: Github
       link: https://github.com/lonewolfyx/awesome-alfred-skyblue
