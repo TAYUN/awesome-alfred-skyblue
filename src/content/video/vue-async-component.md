@@ -12,10 +12,9 @@
 ### 核心代码 `src/libs/apiAsyncComponent.ts`
 
 ```typescript
-import {h, shallowRef} from "vue";
+import { h, shallowRef } from 'vue'
 
-export const defineAsyncComponent = (options) => {
-
+export function defineAsyncComponent(options) {
     if (typeof options === 'function') {
         options = {
             loader: options
@@ -31,8 +30,7 @@ export const defineAsyncComponent = (options) => {
     } = options
 
     return {
-        setup(_, {attrs, slots}) {
-
+        setup(_, { attrs, slots }) {
             /**
              * 异步组件：
              * 在不同的状态下，显示不同的组件
@@ -51,14 +49,14 @@ export const defineAsyncComponent = (options) => {
             }
 
             loadComponent()
-                .then(com => {
+                .then((com) => {
                     if (com && com[Symbol.toStringTag] === 'Module') {
                         com = com.default
                     }
                     // 加载成功
                     component.value = com
                 })
-                .catch(err => {
+                .catch((err) => {
                     console.log('err', err)
                     // 加载失败,或者超时
                     component.value = errorComponent
@@ -76,32 +74,32 @@ export const defineAsyncComponent = (options) => {
 
 ```vue
 <script lang="ts" setup>
-    import {defineAsyncComponent} from "@/libs/apiAsyncComponent.ts";
-    import {h} from "vue";
+import { h } from 'vue'
+import { defineAsyncComponent } from '@/libs/apiAsyncComponent.ts'
 
-    const AsyncComponent = defineAsyncComponent({
-        // loader: () => {
-        //     return new Promise((resolve, reject) => {
-        //         setTimeout(() => {
-        //             const com = {
-        //                 setup() {
-        //                     return () => h('div', '异步组件')
-        //                 }
-        //             }
-        //
-        //             resolve(com)
-        //         }, 4000)
-        //     })
-        // },
-        loader: () => import('./components/HelloWorld.vue'),
-        timeout: 3000,
-        loadingComponent: {
-            render: () => h('div', 'loading...')
-        },
-        errorComponent: {
-            render: () => h('div', '加载失败...')
-        }
-    })
+const AsyncComponent = defineAsyncComponent({
+    // loader: () => {
+    //     return new Promise((resolve, reject) => {
+    //         setTimeout(() => {
+    //             const com = {
+    //                 setup() {
+    //                     return () => h('div', '异步组件')
+    //                 }
+    //             }
+    //
+    //             resolve(com)
+    //         }, 4000)
+    //     })
+    // },
+    loader: () => import('./components/HelloWorld.vue'),
+    timeout: 3000,
+    loadingComponent: {
+        render: () => h('div', 'loading...')
+    },
+    errorComponent: {
+        render: () => h('div', '加载失败...')
+    }
+})
 </script>
 
 <template>
@@ -109,5 +107,4 @@ export const defineAsyncComponent = (options) => {
         <div>插槽</div>
     </AsyncComponent>
 </template>
-
 ```

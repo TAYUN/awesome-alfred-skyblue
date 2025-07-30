@@ -6,12 +6,10 @@
 
 </div>
 
-
 ```typescript
-import {h, shallowRef} from "vue";
+import { h, shallowRef } from 'vue'
 
-export const defineAsyncComponent = (options) => {
-
+export function defineAsyncComponent(options) {
     if (typeof options === 'function') {
         options = {
             loader: options
@@ -27,8 +25,7 @@ export const defineAsyncComponent = (options) => {
     } = options
 
     return {
-        setup(_, {attrs, slots}) {
-
+        setup(_, { attrs, slots }) {
             /**
              * 异步组件：
              * 在不同的状态下，显示不同的组件
@@ -47,14 +44,14 @@ export const defineAsyncComponent = (options) => {
             }
 
             loadComponent()
-                .then(com => {
+                .then((com) => {
                     if (com && com[Symbol.toStringTag] === 'Module') {
                         com = com.default
                     }
                     // 加载成功
                     component.value = com
                 })
-                .catch(err => {
+                .catch((err) => {
                     console.log('err', err)
                     // 加载失败,或者超时
                     component.value = errorComponent

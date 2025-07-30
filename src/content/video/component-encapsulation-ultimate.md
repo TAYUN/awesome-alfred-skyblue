@@ -75,5 +75,4 @@ setTimeout(() => {
     inputRef.value?.clear()
 }, 1e3)
 </script>
-
 ```
