@@ -15,6 +15,7 @@ export default defineConfig({
         sidebar: {
             '/video/': {
                 items: [
+                    { text: '第三方插件封装 vue 组合式函数', link: '/video/third-plugins-encapsulate-vue-composite-function' },
                     { text: 'vue异步组件实现原理', link: '/video/vue-async-component' },
                     { text: 'vue 实现全局状态管理', link: '/video/vue-global-status' },
                     { text: 'vue 组件内的模板复用', link: '/video/use-template-reuse' },
