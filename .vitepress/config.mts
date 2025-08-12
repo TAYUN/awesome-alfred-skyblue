@@ -26,6 +26,7 @@ export default defineConfig({
                 items: [
                     { text: '远程组件加载', link: '/code/define-async-component' },
                     { text: '动态表单', link: '/code/dynamic-form' },
+                    { text: 'useAsyncState', link: '/code/use-async-state' },
                 ],
             },
         },
