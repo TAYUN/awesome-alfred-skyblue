@@ -6,8 +6,6 @@
 视频讲解：[抖音](https://www.douyin.com/user/MS4wLjABAAAAGUvGqSgUb8n2mLUU9SOa5wmdZy-Sj5_FUt-DK5Iu6PpxO1QgrJ1_vXy6ikzz_Q4h?from_tab_name=main&modal_id=7480970814741843227)
 </div>
 
-<code>createCancelTask.ts</code>
-
 ## 代码实现
 
 ```ts
