@@ -21,6 +21,7 @@ export default defineConfig({
                     { text: 'vue 组件内的模板复用', link: '/video/use-template-reuse' },
                     { text: 'vue 组件的二次封装 - 终极版', link: '/video/component-encapsulation-ultimate' },
                     { text: '请求竞态处理', link: '/video/createCancelTask' },
+                    { text: '并发控制器', link: '/video/并发控制器.md' },
                 ],
             },
             '/code/': {
