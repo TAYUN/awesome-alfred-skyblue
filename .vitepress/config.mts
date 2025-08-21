@@ -20,12 +20,15 @@ export default defineConfig({
                     { text: 'vue 实现全局状态管理', link: '/video/vue-global-status' },
                     { text: 'vue 组件内的模板复用', link: '/video/use-template-reuse' },
                     { text: 'vue 组件的二次封装 - 终极版', link: '/video/component-encapsulation-ultimate' },
+                    { text: '请求竞态处理', link: '/video/createCancelTask' },
                 ],
             },
             '/code/': {
                 items: [
                     { text: '远程组件加载', link: '/code/define-async-component' },
                     { text: '动态表单', link: '/code/dynamic-form' },
+                    { text: 'useStorageRef', link: '/code/use-storage-ref' },
+                    { text: 'useAsyncState', link: '/code/use-async-state' },
                 ],
             },
         },
