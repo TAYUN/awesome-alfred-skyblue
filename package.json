@@ -32,12 +32,14 @@
         "autoprefixer": "^10.4.21",
         "eslint": "^9.29.0",
         "lint-staged": "^16.1.5",
+        "picocolors": "^1.1.1",
         "postcss": "^8.5.6",
         "simple-git-hooks": "^2.13.1",
         "tailwindcss": "^3.4.17"
     },
     "simple-git-hooks": {
-        "pre-commit": "npx lint-staged"
+        "pre-commit": "npx lint-staged",
+        "commit-msg": "node scripts/verify-commit.js"
     },
     "lint-staged": {
         "*": "eslint --fix"
