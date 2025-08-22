@@ -9,12 +9,13 @@ export default defineConfig({
         logo: '/logo.jpeg',
         nav: [
             { text: '首页', link: '/' },
-            { text: '视频集合', link: '/video/vue-global-status' },
+            { text: '视频集合', link: '/video/vue-no-render-component' },
             { text: '代码集', link: '/code/dynamic-form' },
         ],
         sidebar: {
             '/video/': {
                 items: [
+                    { text: 'vue中的无渲染组件', link: '/video/vue-no-render-component' },
                     { text: '第三方插件封装 vue 组合式函数', link: '/video/third-plugins-encapsulate-vue-composite-function' },
                     { text: 'vue异步组件实现原理', link: '/video/vue-async-component' },
                     { text: 'vue 实现全局状态管理', link: '/video/vue-global-status' },

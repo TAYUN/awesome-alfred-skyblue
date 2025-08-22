@@ -5,14 +5,14 @@ layout: home
 hero:
   name: "远方os"
   text: "Code Collection"
-  tagline: "最新：第三方插件封装vue组合式函数"
+  tagline: "最新：vue中的无渲染组件"
   image:
     src: /logo.jpeg
     alt: 远方os Code Collection
   actions:
     - theme: brand
       text: 开始学习 ->
-      link: /video/third-plugins-encapsulate-vue-composite-function
+      link: /video/vue-no-render-component
     - theme: alt
       text: Github
       link: https://github.com/lonewolfyx/awesome-alfred-skyblue
